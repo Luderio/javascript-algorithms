@@ -13,3 +13,21 @@ function sumOfNumbers(array) {
 const array = [2, 5, 10, 23, 1, 8];
 const sum = sumOfNumbers(array);
 console.log(sum);
+
+/**
+ * Big O Notation (Asymtotic Analysis)
+ *
+ * Function Definition
+ * T = 1 + 1 + 1 + 1 + 1 + n or
+ * T = 5 + 1n or
+ * T = 5 + 1*n
+ *
+ * Fastest Growing Term
+ * 1*n
+ *
+ * Removal of coeficient
+ * n
+ *
+ * Big O
+ * O(n) or Linear Time Complexity
+ */
