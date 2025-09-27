@@ -50,4 +50,6 @@ Big O
 
 - O(n) or Linear Time Complexity
 
-go to **_problem-1.js_** file to see the full code
+---
+
+go to **[problem-1.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-1/problem-1.js)** file to see the full code
