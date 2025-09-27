@@ -1,7 +1,7 @@
 function sumOfNumbers(array) {
   // input type checking
   if (!Array.isArray(array)) {
-    throw new Error("Input type is not a type of Array");
+    throw new Error("Input type is not a type of 'Array'");
   }
 }
 
