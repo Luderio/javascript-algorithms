@@ -33,41 +33,18 @@ const isArithmetic = (array) => {
 
 //============================================================
 
-// /**
-//  * this version of the code has a Big O Notation: O(1 + n + 1 + 1 + 1 + 1 + 1) or O(6 + 1n) or O(n) / Linear Time Complexity.
-//  */
-// const sumOfArithmetic = (numbers) => {
-//   // checking the input type Will execute 1 time.
-//   if (!Array.isArray(numbers)) {
-//     throw new Error("Input type must be a type of 'Array'");
-//   }
-//   // check if the input array follows an arithmetic pattern. Will execute n times (depending on the length of the input: numbers) + 1.
-//   if (!isArithmetic(numbers)) {
-//     throw new Error("Input must be an arithmetic array");
-//   }
-
-//   // will use the mathematical formula: sum = (n / 2) * (first + last) on getting the sum of the arithmetic sequence.
-//   const n = numbers.length; // Will execute 1 time.
-//   const first = numbers[0]; // Will execute 1 time.
-//   const last = numbers[n - 1]; // Will execute 1 time.
-
-//   // returns the result of the formula
-//   const sum = (n / 2) * (first + last); // Will execute 1 time.
-//   return sum; // Will execute 1 time.
-// };
-
-//============================================================
-
 /**
- * isArithmetic() check is removed.
- * this version of the code has a Big O Notation: O(1 + 1 + 1 + 1 + 1 + 1) or O(6) or O(1) / Constant Time Complexity.
- * No matter how long the numbers array is, the function will execute only 6 operations.
+ * MY PREFERRED ALGORITHM
+ * this version of the code has a Big O Notation: O(1 + n + 1 + 1 + 1 + 1 + 1) or O(6 + 1n) or O(n) / Linear Time Complexity.
  */
-
 const sumOfArithmetic = (numbers) => {
   // checking the input type Will execute 1 time.
   if (!Array.isArray(numbers)) {
     throw new Error("Input type must be a type of 'Array'");
+  }
+  // check if the input array follows an arithmetic pattern. Will execute n times (depending on the length of the input: numbers) + 1.
+  if (!isArithmetic(numbers)) {
+    throw new Error("Input must be an arithmetic array");
   }
 
   // will use the mathematical formula: sum = (n / 2) * (first + last) on getting the sum of the arithmetic sequence.
@@ -80,6 +57,30 @@ const sumOfArithmetic = (numbers) => {
   return sum; // Will execute 1 time.
 };
 
-const numbers = [2, 7, 12, 17, 22, 27, 32, 37, 42];
-const sum = sumOfArithmetic(numbers);
-console.log(sum);
+//============================================================
+
+// /**
+//  * isArithmetic() check is removed.
+//  * this version of the code has a Big O Notation: O(1 + 1 + 1 + 1 + 1 + 1) or O(6) or O(1) / Constant Time Complexity.
+//  * No matter how long the numbers array is, the function will execute only 6 operations.
+//  */
+
+// const sumOfArithmetic = (numbers) => {
+//   // checking the input type Will execute 1 time.
+//   if (!Array.isArray(numbers)) {
+//     throw new Error("Input type must be a type of 'Array'");
+//   }
+
+//   // will use the mathematical formula: sum = (n / 2) * (first + last) on getting the sum of the arithmetic sequence.
+//   const n = numbers.length; // Will execute 1 time.
+//   const first = numbers[0]; // Will execute 1 time.
+//   const last = numbers[n - 1]; // Will execute 1 time.
+
+//   // returns the result of the formula
+//   const sum = (n / 2) * (first + last); // Will execute 1 time.
+//   return sum; // Will execute 1 time.
+// };
+
+// const numbers = [2, 7, 12, 17, 22, 27, 32, 37, 42];
+// const sum = sumOfArithmetic(numbers);
+// console.log(sum);
