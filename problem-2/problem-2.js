@@ -11,8 +11,6 @@ const isArithmetic = (array) => {
   return true; // Executes 1 time
 };
 
-export default isArithmetic;
-
 const numbers = [2, 7, 12, 17, 22, 27, 32, 37, 42];
 const arithmetic = isArithmetic(numbers);
 console.log(arithmetic);
