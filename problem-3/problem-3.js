@@ -19,7 +19,14 @@ const sumOfArithmetic = (numbers) => {
     throw new Error("Input must be an arithmetic array");
   }
 
-  return "Passed the input checking";
+  // will use the mathematical formula: sum = (n / 2) * (first + last) on getting the sum of the arithmetic sequence.
+  const n = numbers.length;
+  const first = numbers[0];
+  const last = numbers[n - 1];
+
+  // returns the result of the formula
+  const sum = (n / 2) * (first + last);
+  return sum;
 };
 
 const numbers = [2, 7, 12, 17, 22, 27, 32, 37, 42];
