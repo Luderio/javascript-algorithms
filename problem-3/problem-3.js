@@ -9,7 +9,33 @@ const isArithmetic = (array) => {
   return true;
 };
 
-// // this version of the code has a Big O Notation: O(1 + n + 1 + 1 + 1 + 1 + 1) or O(6 + 1n) or O(n) / Linear Time Complexity.
+// /**
+//  * this version has a Big o Notation: O(1 + n + 1 + n + 1) or O(3 + 2n) or O(n) / Linear Time Complexity.
+//  */
+// const sumOfArithmetic = (numbers) => {
+//   // checking the input type. Will execute 1 time.
+//   if (!Array.isArray(numbers)) {
+//     throw new Error("Input type must be a type of 'Array'");
+//   }
+//   // check if the input array follows an arithmetic pattern. Will execute n times (depending on the length of the input: numbers) + 1.
+//   if (!isArithmetic(numbers)) {
+//     throw new Error("Input must be an arithmetic array");
+//   }
+
+//   let sum = 0; // Will execute 1 time.
+
+//   // Will execute n times (depending on the length of the input: numbers).
+//   for (let number of numbers) {
+//     sum += number;
+//   }
+//   return sum; // Will execute 1 time.
+// };
+
+//============================================================
+
+// /**
+//  * this version of the code has a Big O Notation: O(1 + n + 1 + 1 + 1 + 1 + 1) or O(6 + 1n) or O(n) / Linear Time Complexity.
+//  */
 // const sumOfArithmetic = (numbers) => {
 //   // checking the input type Will execute 1 time.
 //   if (!Array.isArray(numbers)) {
@@ -27,28 +53,6 @@ const isArithmetic = (array) => {
 
 //   // returns the result of the formula
 //   const sum = (n / 2) * (first + last); // Will execute 1 time.
-//   return sum; // Will execute 1 time.
-// };
-
-//============================================================
-
-// // this verssion has a Big o Notation: O(3 + 1n + 1n) or O(3 + 2n) or O(n) / Linear Time Complexity.
-// const sumOfArithmetic = (numbers) => {
-//   // checking the input type. Will execute 1 time.
-//   if (!Array.isArray(numbers)) {
-//     throw new Error("Input type must be a type of 'Array'");
-//   }
-//   // check if the input array follows an arithmetic pattern. Will execute n times (depending on the length of the input: numbers) + 1.
-//   if (!isArithmetic(numbers)) {
-//     throw new Error("Input must be an arithmetic array");
-//   }
-
-//   let sum = 0; // Will execute 1 time.
-
-//   // Will execute n times (depending on the length of the input: numbers).
-//   for (let number of numbers) {
-//     sum += number;
-//   }
 //   return sum; // Will execute 1 time.
 // };
 
