@@ -1,4 +1,13 @@
-import isArithmetic from "../problem-2/problem-2"; // imported isArithmetic() function from previous code challenge
+const isArithmetic = (array) => {
+  if (!Array.isArray(array) || array.length < 2) return false;
+
+  let difference = array[1] - array[0];
+
+  for (let i = 2; i < array.length; i++) {
+    if (array[i] - array[i - 1] !== difference) return false;
+  }
+  return true;
+};
 
 const sumOfArithmetic = (numbers) => {
   // checking the input type
@@ -9,6 +18,8 @@ const sumOfArithmetic = (numbers) => {
   if (!isArithmetic(numbers)) {
     throw new Error("Input must be an arithmetic array");
   }
+
+  return "Passed the input checking";
 };
 
 const numbers = [2, 7, 12, 17, 22, 27, 32, 37, 42];
