@@ -1,5 +1,8 @@
 function gridTraveler(m, n) {
-  return;
+  // input type check
+  if (typeof m !== "number" && typeof n !== "number") {
+    throw new Error("input must be a type of 'Number'");
+  }
 }
 
-console.log(gridTraveler(m, n));
+console.log(gridTraveler(4, 4));
