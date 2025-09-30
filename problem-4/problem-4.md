@@ -2,6 +2,7 @@
 
 - Write a function _fib(n)_ that takes in a number as an argument.
 - The function should return the _n-th_ number of the Fibonacci sequence.
+- Make sure that the algorithm is optimized to handle larger fibonacci sequences.
 
 ---
 
