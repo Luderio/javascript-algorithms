@@ -1,3 +1,4 @@
+// classic fibonacci algorithm.
 function fib(n) {
   // input type checking
   if (typeof n !== "number") {
