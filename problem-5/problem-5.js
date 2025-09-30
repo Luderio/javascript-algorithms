@@ -1,5 +1,7 @@
 // Core logic. Currently un-optimized
 
+// formula can be used: binomial coeficient: C(n + m, n) = (n + m)! / (n! × m!)
+
 function gridTraveler(m, n) {
   // input type check
   if (typeof m !== "number" && typeof n !== "number") {
