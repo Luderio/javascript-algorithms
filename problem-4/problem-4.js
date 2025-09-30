@@ -8,6 +8,7 @@ function fib(n) {
     return n;
   }
 
+  // fibonacci formula: fib = fib(n - 1) + fib(n - 2) for n >= 2.
   return fib(n - 1) + fib(n - 2);
 }
 
