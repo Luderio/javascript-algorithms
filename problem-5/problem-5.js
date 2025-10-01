@@ -59,18 +59,28 @@
 
 /**
  * Using Binomial Coeficient formula
- *
+ * Follows this binomial Coeficient (Multiplicative Form) formula: C(total, k) = (from i = 1 to k) (total - k + i) / i
+ * The formula just needs to be tweaked to: C(total - 2, k - 1) = (from i = 1 to k) (total - k + i) / i to handle proper grid-path counting.
+ * The formula will be: C(m + n - 2, n - 1) = (from i = 1 to n) (total - n + i) / i or C(m + n - 2, m - 1) = (from i = 1 to m) (total - m + i) / i (which ever axis (m or n) is smaller)
  */
 
 function gridTraveler(m, n) {
-  // input type check
-  if (typeof m !== "number" && typeof n !== "number") {
-    throw new Error("input must be a type of 'Number'");
+  if (typeof m !== "number" || typeof n !== "number") {
+    throw new Error("Inputs must be numbers");
   }
 
   if (m === 0 || n === 0) return 0;
   if (m === 1 && n === 1) return 1;
-  return gridTraveler(m - 1, n, memo) + gridTraveler(m, n - 1, memo);
+
+  const total = m + n - 2;
+  const k = Math.min(m - 1, n - 1);
+  let result = 1;
+
+  for (let i = 1; i <= k; i++) {
+    result = (result * (total - k + i)) / i;
+  }
+
+  return result;
 }
 
 console.log(gridTraveler(2, 3)); // 3
