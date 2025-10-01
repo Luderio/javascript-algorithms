@@ -7,3 +7,7 @@
 - Write a function **_gridTraveler(m, n)_** that satisfies the requirements above.
 
 ---
+
+Available formula:
+
+- binomial coeficient: C(n + m, n) = (n + m)! / (n! × m!)
