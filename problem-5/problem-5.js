@@ -62,6 +62,8 @@
  * Follows this binomial Coeficient (Multiplicative Form) formula: C(total, k) = (from i = 1 to k) (total - k + i) / i
  * The formula just needs to be tweaked to: C(total - 2, k - 1) = (from i = 1 to k) (total - k + i) / i to handle proper grid-path counting.
  * The formula will be: C(m + n - 2, n - 1) = (from i = 1 to n) (total - n + i) / i or C(m + n - 2, m - 1) = (from i = 1 to m) (total - m + i) / i (which ever axis (m or n) is smaller)
+ * Has Big O Time Complexity of: O(min(m, n)) or Linear Time Complexity
+ * Has Big O Space COmplexity of: O(1) or Constant Space Complexity
  */
 
 function gridTraveler(m, n) {
@@ -72,7 +74,7 @@ function gridTraveler(m, n) {
   if (m === 0 || n === 0) return 0;
   if (m === 1 && n === 1) return 1;
 
-  const total = m + n - 2;
+  const total = m + n - 2; // to accomodate the move restriction (down, and right or m - 1, and n - 1).
   const k = Math.min(m - 1, n - 1);
   let result = 1;
 
