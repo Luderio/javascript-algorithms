@@ -45,7 +45,7 @@ console.log(gridTraveler(50, 50)); // 254,776,122,589,808,670,000,000,000,000 pa
 
 ### Using Memoization
 
-- Core Algorithm with Memoization logic. (Optimized Version).
+- Core Algorithm with Memoization logic. (Optimized Version). (**_My Preferred version_**)
 - Adds a new argument with default value: memo = {} which is an object.
 - Every result gets added to the memo object and the memo value is being passed down by reference to the recursive calls to act as a cache of the result.
 - At every iteration, the algorithm will check if the key,value pair is already present in the object. if yes, the stored result is used immediately cuttting down on execution time.
@@ -87,6 +87,7 @@ console.log(gridTraveler(50, 50)); // 254,776,122,589,808,670,000,000,000,000 pa
 - The formula will be: **_C(m + n - 2, n - 1) = (from i = 1 to n) (total - n + i) / i_** or **_C(m + n - 2, m - 1) = (from i = 1 to m) (total - m + i) / i_** (which ever axis (_m_ or _n_) is smaller)
 - Has **Big O Time Complexity** of: **_O(min(m, n))_** or **_Linear Time Complexity_**
 - Has **Big O Space Complexity** of: **_O(1)_** or **_Constant Space Complexity_**
+- PITFALL: Binomial (multiplicative) can drift for large values unless you use BigInt or GCD reduction.
 
 ```javascript
 function gridTraveler(m, n) {
