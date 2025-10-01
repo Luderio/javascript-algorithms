@@ -3,7 +3,7 @@
  * Adds a new argument with default value: memo = {} which is an object.
  * Every result gets added to the memo object and the memo value is being passed down by reference to the recursive calls to act as a cache of the result.
  * At every iteration, the algorithm will check if the key,value pair is already present in the object. if yes, the stored result is used immediately cuttting down on execution time.
- *
+ * Has **Big O Time Complexity** of **_O(n\*m)_** or **_Linear Time Complexity_**.
  */
 
 function gridTraveler(m, n, memo = {}) {
