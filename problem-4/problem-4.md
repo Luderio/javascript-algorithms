@@ -88,4 +88,4 @@ Using a **_memoization_** technique on our fibonacci algorithm, the **_Big O Tim
 
 ---
 
-go to **[problem-4.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-4/problem-3.js)** file to see the full code.
+go to **[problem-4.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-4/problem-4.js)** file to see the full code.
