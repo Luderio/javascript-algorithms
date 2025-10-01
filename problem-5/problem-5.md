@@ -118,4 +118,4 @@ console.log(gridTraveler(50, 50)); // 254,776,122,589,808,670,000,000,000,000 pa
 
 ---
 
-go to **[problem-5.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-3/problem-5.js)** file to see the full code.
+go to **[problem-5.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-5/problem-5.js)** file to see the full code.
