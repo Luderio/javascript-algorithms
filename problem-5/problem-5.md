@@ -20,6 +20,7 @@
 - Will recursively call and resolve every **_gridTraveler(m, n)_** calls even the calls with the same return value (duplicated items).
 - Will become very slow in larger **_m,n_** grids.
 - Has **Big O Time Complexity** of **_O(2^n+m)_** or **_O(2<sup>n+m</sup>)_** or **_Exponential Time Complexity_**.
+- Has **Big O Space Complexity** of **_O(m + n) call stack_** or **_Linear Space Complexity / Linear Call Stack Depth_**.
 
 ```javascript
 function gridTraveler(m, n) {
@@ -46,7 +47,8 @@ console.log(gridTraveler(50, 50)); // 254,776,122,589,808,670,000,000,000,000 pa
 - Adds a new argument with default value: memo = {} which is an object.
 - Every result gets added to the memo object and the memo value is being passed down by reference to the recursive calls to act as a cache of the result.
 - At every iteration, the algorithm will check if the key,value pair is already present in the object. if yes, the stored result is used immediately cuttting down on execution time.
-- Has **Big O Time Complexity** of **_O(n\*m)_** or **_Linear Time Complexity_**.
+- Has **Big O Time Complexity** of **_O(n\*m)_** or **_Quadtratic Time Complexity_**.
+- Has **Big O Space Complexity** of **_O(n\*m)_** or **_Quadtratic Space Complexity_**.
 
 ```javascript
 function gridTraveler(m, n, memo = {}) {
