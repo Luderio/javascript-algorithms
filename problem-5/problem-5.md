@@ -10,7 +10,7 @@
 
 - **Brute Force or Classic Aproach**: Looping through each operations even the duplicates.
 - **Memoization**: Memoize the repeating patters to illiminate duplicates.
-- **Binomial Coeficient**: _C(n + m, n) = (n + m)! / (n! × m!)_
+- **Binomial Coeficient (Multiplicative Form)**: _C(total, k) = (from i = 1 to k) (total - k + i) / i_
 
 ## Code Solution:
 
