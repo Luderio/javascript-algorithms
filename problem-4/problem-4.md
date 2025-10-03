@@ -54,7 +54,7 @@ The code above is correct and will work on smaller **_n_** numbers but as the **
 
 To optimize the algorithm, it is recommended to use **_memoization_** to memoize the return value of each **_n_** arguments in an object and use that memoized result to immediately return a value if that **_n_** argument is already added inside the object, effectively cutting down recursive operations or the recurvise calls by eliminating the recursive calls on duplicate **_sub-tree_** patterns.
 
-Using a **_memoization_** technique on our fibonacci algorithm, the **_Big O Time Complexity_** will be improved or optimized to **_O(2n)_**, or **_O(n_**), or a _Linear Time Complexity_, making it a much faster algorithm to return fibonacci values at a given **_n_** position even if the **_n_** gets larger.
+Using a **_memoization_** technique on our fibonacci algorithm, the **_Big O Time Complexity_** will be improved or optimized to **_O(2n)_**, or **_O(n)_**, or a _Linear Time Complexity_, making it a much faster algorithm to return fibonacci values at a given **_n_** position even if the **_n_** gets larger.
 
 ### Fibonacci Algorithm with Memoization
 
