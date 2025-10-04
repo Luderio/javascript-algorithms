@@ -3,10 +3,10 @@
  *
  */
 
-function canSum(targetSum, numbers) {
+function canSum(targetSum, numbers, memo = {}) {
   // input type checking.
 
-  if (typeof targetSum !== "number" || targetSum < 0) {
+  if (typeof targetSum !== "number") {
     throw new Error(
       "argument 'targetSum' must be a type of 'Number' and a non-negative number."
     );
@@ -14,11 +14,27 @@ function canSum(targetSum, numbers) {
 
   if (!Array.isArray(numbers)) {
     throw new Error(
-      "argument numbers[] must be an array of non-negative numbers."
+      "argument 'numbers' must be an array of non-negative numbers."
     );
   }
+
+  if (targetSum in memo) return memo[targetSum];
+  if (targetSum === 0) return true;
+  if (targetSum < 0) return false;
+
+  for (let num of numbers) {
+    const difference = targetSum - num;
+    if (canSum(difference, numbers, memo) === true) {
+      memo[targetSum] = true;
+      return true;
+    }
+  }
+  memo[targetSum] = false;
+  return false;
 }
 
-const numbers = [5, 3, 4, 7];
-const targetSum = 7;
-console.log(canSum(targetSum, numbers));
+console.log(canSum(7, [2, 3]));
+console.log(canSum(7, [7, 3, 4, 7]));
+console.log(canSum(7, [2, 4]));
+console.log(canSum(8, [2, 3, 5]));
+console.log(canSum(300, [7, 14]));
