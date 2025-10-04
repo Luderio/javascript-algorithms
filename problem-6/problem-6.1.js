@@ -1,6 +1,7 @@
 /**
- * Core Algorithm without Memoization.
- *
+ * Core Algorithm with Memoization.
+ * Big O Time Complexity: O(m*n)
+ * Big O Space Complexity: O(m)
  */
 
 function canSum(targetSum, numbers, memo = {}) {
