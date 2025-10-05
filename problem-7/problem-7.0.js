@@ -1,6 +1,7 @@
 /**
- * Core Algorithm without Memoization
- *
+ * Core Algorithm (My Own Version)
+ * Big O Time Complexity: O(n) or linear Time Complexity
+ * Big O Space Complexity: O(n) or Linear Space Complexity
  */
 
 function howSum(targetSum, numbers) {
