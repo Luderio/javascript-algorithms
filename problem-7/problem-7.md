@@ -67,7 +67,7 @@ go to **[problem-7.0.js](https://github.com/Luderio/javascript-algorithms/blob/m
 ### Solution 2: My Own Solution (Optimized)
 
 - This version removes the while loop from the previous version improving the Time Complexity
-- Big O Time Complexity: O(m/n[i] \* n) or O(m \* n) or Linear Time Complexity
+- Big O Time Complexity: O(m \* n) or Linear Time Complexity
 - Big O Space Complexity: O(n + m) or Linear Space Complexity.
 
 ```javascript
