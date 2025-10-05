@@ -18,7 +18,7 @@ howSum(0, [1, 2, 3]); // []
 
 ### Solution 1: My Own Solution (Unoptimized)
 
-- Big O Time Complexity: O(n\*m) or Linear Time Complexity
+- Big O Time Complexity: O(n \* m) or Linear Time Complexity
 - Big O Space Complexity: O(m + n) or Linear Space Complexity
 
 ```javascript
