@@ -1,7 +1,7 @@
 /**
  * Core Algorithm (My Own Version) - Unoptimized
- * Big O Time Complexity: O(n) or linear Time Complexity
- * Big O Space Complexity: O(n) or Linear Space Complexity
+ * Big O Time Complexity: O(n^m) or linear Time Complexity
+ * Big O Space Complexity: O(m + n) or Linear Space Complexity
  */
 
 function howSum(targetSum, numbers) {
