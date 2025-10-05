@@ -1,4 +1,18 @@
+/**
+ * Core Algorithm without Memoization
+ *
+ */
+
 function howSum(targetSum, numbers) {
+  // inout type checking.
+  if (typeof targetSum !== "number") {
+    throw new Error("argument should be a type of 'number'.");
+  }
+
+  if (!Array.isArray(numbers)) {
+    throw new Error("argument must be an array of numbers.");
+  }
+
   return [];
 }
 
