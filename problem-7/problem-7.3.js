@@ -1,7 +1,7 @@
 /**
  * Core Algorithm with Memoization
- * Big O Time Complexity: O(m*n)
- * Big O Space Complexity: O(m)
+ * Big O Time Complexity: O(m*n) or Linear Time Complexity
+ * Big O Space Complexity: O(m) or Linear Time Complexity
  */
 
 function howSum(targetSum, numbers, memo = {}) {
