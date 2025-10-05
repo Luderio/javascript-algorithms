@@ -16,7 +16,7 @@ howSum(0, [1, 2, 3]); // []
 
 ## Code Solution
 
-### Solution 1:
+### Solution 1: My Own Solution (Unoptimized)
 
 - Core Algorithm (My Own Version) - Unoptimized
 - Big O Time Complexity: O(n^m) or Exponential Time Complexity
@@ -59,7 +59,11 @@ console.log(howSum(0, [1, 2, 3])); // []
 console.log(howSum(300, [1, 2, 3])); // [1, 1, 1, 1, 1, 1, 1, ... 293 more items]
 ```
 
-### Solution 2:
+go to **[problem-7.0.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-7/problem-7.0.js)** to see the full code.
+
+---
+
+### Solution 2: My Own Solution (Optimized)
 
 - Core Algorithm with Optimization
 - This version removes the while loop from the previous version improving the Time Complexity
@@ -100,6 +104,10 @@ console.log(howSum(0, [1, 2, 3])); // []
 console.log(howSum(300, [1, 2, 3])); // [1, 1, 1, 1, 1, 1, 1, ... 293 more items]
 ```
 
+go to **[problem-7.1.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-7/problem-7.1.js)** to see the full code.
+
+---
+
 ### Solution 3:
 
 - Core Algorithm without Memoization
@@ -137,6 +145,10 @@ console.log(howSum(7, [3, 4])); // should return [3, 4]
 console.log(howSum(0, [1, 2, 3])); // []
 console.log(howSum(300, [1, 2, 3])); // [1, 1, 1, 1, 1, 1, 1, ... 293 more items]
 ```
+
+go to **[problem-7.2.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-7/problem-7.2.js)** to see the full code.
+
+---
 
 ### Solution 4:
 
@@ -178,3 +190,7 @@ console.log(howSum(7, [3, 4])); // should return [3, 4]
 console.log(howSum(0, [1, 2, 3])); // []
 console.log(howSum(300, [1, 2, 3])); // [1, 1, 1, 1, 1, 1, 1, ... 293 more items]
 ```
+
+go to **[problem-7.3.js](https://github.com/Luderio/javascript-algorithms/blob/main/problem-7/problem-7.3.js)** to see the full code.
+
+---
