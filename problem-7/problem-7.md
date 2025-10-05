@@ -18,8 +18,7 @@ howSum(0, [1, 2, 3]); // []
 
 ### Solution 1: My Own Solution (Unoptimized)
 
-- Core Algorithm (My Own Version) - Unoptimized
-- Big O Time Complexity: O(n^m) or Exponential Time Complexity
+- Big O Time Complexity: O(n\*m) or Linear Time Complexity
 - Big O Space Complexity: O(m + n) or Linear Space Complexity
 
 ```javascript
@@ -55,6 +54,8 @@ function howSum(targetSum, numbers) {
 console.log(howSum(7, [5, 3, 4, 7])); // should return  [3, 4] or [7]
 console.log(howSum(8, [2, 3, 5])); // should return [2, 2, 2, 2]  or [3, 5]
 console.log(howSum(7, [2, 4])); // should return null
+console.log(howSum(7, [3, 4])); // should return null
+console.log(howSum(7, [4, 3])); // should return null
 console.log(howSum(0, [1, 2, 3])); // []
 console.log(howSum(300, [1, 2, 3])); // [1, 1, 1, 1, 1, 1, 1, ... 293 more items]
 ```
@@ -65,9 +66,8 @@ go to **[problem-7.0.js](https://github.com/Luderio/javascript-algorithms/blob/m
 
 ### Solution 2: My Own Solution (Optimized)
 
-- Core Algorithm with Optimization
 - This version removes the while loop from the previous version improving the Time Complexity
-- Big O Time Complexity: O(n \* m) or linear Time Complexity
+- Big O Time Complexity: O(m/n[i] \* n) or O(m \* n) or Linear Time Complexity
 - Big O Space Complexity: O(n + m) or Linear Space Complexity.
 
 ```javascript
@@ -108,9 +108,8 @@ go to **[problem-7.1.js](https://github.com/Luderio/javascript-algorithms/blob/m
 
 ---
 
-### Solution 3:
+### Solution 3: (Combinatorial Subset Sum) without Memoization
 
-- Core Algorithm without Memoization
 - Big O Time Complexity: O(n^m) or Exponential Time Complexity
 - Big O Space Complexity: O(m + n) or Linear Space Complexity
 
@@ -150,7 +149,7 @@ go to **[problem-7.2.js](https://github.com/Luderio/javascript-algorithms/blob/m
 
 ---
 
-### Solution 4:
+### Solution 4: ### Solution 3: (Combinatorial Subset Sum) with Memoization
 
 - Core Algorithm with Memoization
 - Big O Time Complexity: O(m\*n) or Linear Time Complexity
