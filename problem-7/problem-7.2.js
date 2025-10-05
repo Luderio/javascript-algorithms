@@ -12,6 +12,18 @@ function howSum(targetSum, numbers) {
   if (!Array.isArray(numbers) || numbers === undefined) {
     throw new Error("argument must be an array of numbers.");
   }
+
+  if (targetSum === 0) return [];
+  if (targetSum < 0) return null;
+
+  for (let number of numbers) {
+    let remaining = targetSum - number;
+    let remainder = howSum(remaining, numbers);
+    if (remainder !== null) {
+      return [...remainder, number];
+    }
+  }
+  return null;
 }
 
 console.log(howSum(7, [5, 3, 4, 7])); // should return  [3, 4] or [7]
