@@ -1,7 +1,7 @@
 /**
  * Core Algorithm with Optimization
  * This version removes the while loop from the previous version improving the Time Complexity
- * Big O Time Complexity: O(n * m) or linear Time Complexity
+ * Big O Time Complexity: O(n * m) or Linear Time Complexity
  * Big O Space Complexity: O(n + m) or Linear Space Complexity.
  */
 
