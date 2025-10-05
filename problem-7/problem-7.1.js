@@ -23,7 +23,7 @@ function howSum(targetSum, numbers) {
   if (current === targetSum) return current;
   if (current + next === targetSum) return [current, next];
   if (targetSum % current === 0) {
-    return new Array(targetSum / current).fill(current);
+    return new Array(targetSum).fill(current);
   }
 
   return howSum(targetSum, numbers);
