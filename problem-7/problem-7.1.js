@@ -15,7 +15,6 @@ function howSum(targetSum, numbers) {
     throw new Error("argument must be an array of numbers.");
   }
 
-  const combinations = [];
   const current = numbers.shift();
   const next = numbers[0];
 
