@@ -1,6 +1,6 @@
 /**
  * Core Algorithm (My Own Version) - Unoptimized
- * Big O Time Complexity: O(m*n) or Exponential Time Complexity
+ * Big O Time Complexity: O(m * n) or Exponential Time Complexity
  * Big O Space Complexity: O(m + n) or Linear Space Complexity
  */
 
