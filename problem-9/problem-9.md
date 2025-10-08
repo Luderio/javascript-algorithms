@@ -7,13 +7,13 @@
 **Examples:**
 
 ```javascript
-canCosntsruct("abdcef", ["ab", "abc", "cd", "def", "abcd"]);
+canConstruct("abdcef", ["ab", "abc", "cd", "def", "abcd"]);
 // should return "true" because the array at index 1 and 3 when combined is equal to "abcdef".
 
-canCosntsruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]);
+canConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]);
 // should return "false"
 
-canCosntsruct("", ["dog", "cat", "mouse"]);
+canConstruct("", ["dog", "cat", "mouse"]);
 // should return "true"
 ```
 
