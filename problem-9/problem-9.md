@@ -1,7 +1,7 @@
 # Problem 9: Can Construct
 
 - Write a fucntion **_canConstruct(target, wordBank)_** that accepts a target string and an array of strings.
-- The function should return a **_boolean_** indicating wether or not the **_target_** can be constructed by concatenatin elements of the **_wordBank_** array.
+- The function should return a **_boolean_** indicating wether or not the **_target_** can be constructed by concatenation elements of the **_wordBank_** array.
 - You may reuse elements of the **_wordBank_** as many times as needed.
 
 **Examples:**
