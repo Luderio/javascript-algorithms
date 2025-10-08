@@ -24,7 +24,6 @@ function canConstruct(target, wordBank) {
       }
     }
   }
-
   return false;
 }
 
