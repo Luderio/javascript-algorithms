@@ -1,5 +1,5 @@
 /**
- * My Own Solution. Unoptimized
+ * My Own Solution. Unoptimized.
  */
 
 function canConstruct(target, wordBank) {
