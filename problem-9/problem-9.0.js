@@ -31,5 +31,5 @@ console.log(canConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // shou
 console.log(
   canConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"])
 ); // should return false.
-console.log(canConstruct("", ["dog", "cat", "mouse"])); // should return true
+console.log(canConstruct("", ["dog", "cat", "mouse"])); // should return true.
 console.log(canConstruct("dogdogcat", ["dog", "cat", "mouse"])); // should return false.
