@@ -7,13 +7,13 @@
 **Examples:**
 
 ```javascript
-canConstruct("abdcef", ["ab", "abc", "cd", "def", "abcd"]);
+countConstruct("abdcef", ["ab", "abc", "cd", "def", "abcd"]);
 // should return "1" because the array at index 1 and 3 when combined is equal to "abcdef".
 
-canConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]);
+countConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]);
 // should return "0"
 
-canConstruct("", ["dog", "cat", "mouse"]);
+countConstruct("", ["dog", "cat", "mouse"]);
 // should return "1"
 ```
 
