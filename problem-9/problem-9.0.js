@@ -1,5 +1,6 @@
 /**
- * My Own Solution.
+ * My Own Solution. (Wrong Approach)
+ * Will only cover certain number of iterations based on the length of the wordBank.
  */
 
 function canConstruct(target, wordBank) {
