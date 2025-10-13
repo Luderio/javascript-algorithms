@@ -1,5 +1,8 @@
 /**
- * Core Algorithm without Memoization
+ * Core Algorithm without Memoization.
+ * Unoptimized
+ * Big O Time Complexity: O(n^m) or Exponential Time Cimplexity.
+ * Big O Space Complexity: O(m^2) or Quadtratic Space Complexity.
  */
 
 function countConstruct(target, wordBank) {
@@ -27,8 +30,10 @@ function countConstruct(target, wordBank) {
 
 /**
  * m = target.length
- * n = wordkBank.length
+ * n = wordBank.length
  *
+ * Time Complexity: O(n^m * m) or O(n^m)
+ * Space Complexity: O(m^2)
  */
 
 console.log(countConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // should return 1
