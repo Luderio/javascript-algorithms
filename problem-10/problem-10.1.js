@@ -1,7 +1,7 @@
 /**
  * Core Algorithm with Memoization
  * Optimized
- * Big O Time Complexity: O(n * m^2) or Quadratic Time Complexity.
+ * Big O Time Complexity: O(n * m^2) or Polynomial Time Complexity.
  * Big O Space COmplexity: O(m^2) or Quadratic Time Complexity.
  */
 
