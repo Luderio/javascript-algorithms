@@ -59,4 +59,4 @@ console.log(
     "eeeee",
     "eeeeee",
   ])
-); // should return 0, very slow.
+); // should return 0, very fast.
