@@ -1,5 +1,5 @@
 /**
- * Core Algorithm without Optimization
+ * Core Algorithm without Memoization
  */
 
 function canConstruct(target, wordBank) {
@@ -32,3 +32,16 @@ console.log(
 ); // should return false.
 console.log(canConstruct("", ["dog", "cat", "mouse"])); // should return true.
 console.log(canConstruct("dogdogcat", ["dog", "cat", "mouse"])); // should return true.
+console.log(
+  canConstruct("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"])
+); // should return true.
+console.log(
+  canConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", [
+    "e",
+    "ee",
+    "eee",
+    "eeee",
+    "eeeee",
+    "eeeeee",
+  ])
+); // should return false. Super slow
