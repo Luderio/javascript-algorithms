@@ -1,5 +1,8 @@
 /**
- * Core Algorithm without Memoization
+ * Core Algorithm without Memoization.
+ * Unoptimized
+ * Big O Time Complexity: O(n^m) or Exponential Time Cimplexity.
+ * Big O Space Complexity: O(m^2) or Quadtratic Space Complexity.
  */
 
 function canConstruct(target, wordBank) {
@@ -13,7 +16,7 @@ function canConstruct(target, wordBank) {
   }
 
   //   console.log(target.length);
-  if (target.length === 0 || target === undefined) return true;
+  if (target.length === 0 || target === "") return true;
 
   for (let item of wordBank) {
     if (target.startsWith(item)) {
@@ -25,6 +28,14 @@ function canConstruct(target, wordBank) {
 
   return false;
 }
+
+/**
+ * m = target.length
+ * n = wordBank.length
+ *
+ * Time Complexity: O(n^m * m) or O(n^m)
+ * Space Complexity: O(m^2)
+ */
 
 console.log(canConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // should return true
 console.log(
