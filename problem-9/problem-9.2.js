@@ -1,5 +1,8 @@
 /**
  * Core Algorithm with Memoization
+ * Optimized
+ * Big O Time Complexity: O(n * m^2) or Quadratic Time Complexity.
+ * Vig O Space COmplexity: O(m^2) or Quadratic Time Complexity.
  */
 
 function canConstruct(target, wordBank, memo = {}) {
@@ -13,14 +16,14 @@ function canConstruct(target, wordBank, memo = {}) {
   }
 
   if (target in memo) return memo[target];
-  if (target.length === 0 || target === undefined) return true;
+  if (target.length === 0 || target === "") return true;
 
   for (let item of wordBank) {
     if (target.startsWith(item)) {
       let new_target = target.replace(item, "");
       let result = canConstruct(new_target, wordBank, memo);
       if (result === true) {
-        memo[new_target] = true;
+        memo[target] = true;
         return true;
       }
     }
@@ -28,6 +31,14 @@ function canConstruct(target, wordBank, memo = {}) {
   memo[target] = false;
   return false;
 }
+
+/**
+ * m = target.length
+ * n = wordBank.length
+ *
+ * Time Complexity: O(n * m^2)
+ * Space Complexity: O(m^2)
+ */
 
 console.log(canConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // should return true
 console.log(
