@@ -2,7 +2,7 @@
  * Core Algorithm with Memoization
  * Optimized
  * Big O Time Complexity: O(n * m^2) or Quadratic Time Complexity.
- * Vig O Space COmplexity: O(m^2) or Quadratic Time Complexity.
+ * Big O Space COmplexity: O(m^2) or Quadratic Time Complexity.
  */
 
 function canConstruct(target, wordBank, memo = {}) {
