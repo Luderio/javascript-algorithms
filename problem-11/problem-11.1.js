@@ -55,6 +55,7 @@ console.log(allConstruct("", ["dog", "cat", "mouse"]));
 // should return [["purp", "le"], ["p", "ur", "p", "le"]]
 console.log(allConstruct("purple", ["purp", "p", "ur", "le", "purpl"]));
 
+// should return []
 console.log(
   allConstruct("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaz", [
     "a",
