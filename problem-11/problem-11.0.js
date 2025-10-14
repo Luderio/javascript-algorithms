@@ -1,0 +1,31 @@
+/**
+ * Core Algorithm without Memoization
+ * Unoptimized
+ *
+ */
+
+function allConstruct(target, wordBank) {
+  // input type checking.
+
+  if (typeof target !== "string") {
+    throw new Error("argument must be a type of 'String'");
+  }
+
+  if (!Array.isArray(wordBank)) {
+    throw new Error("argument must be an array of 'strings'");
+  }
+}
+
+// should return [[abc, def]] because the array at index 1 and 3 when combined is equal to "abcdef".
+console.log(allConstruct("abdcef", ["ab", "abc", "cd", "def", "abcd"]));
+
+// should return []
+console.log(
+  allConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"])
+);
+
+// should return [[]]
+console.log(allConstruct("", ["dog", "cat", "mouse"]));
+
+// should return [["purp", "le"], ["p", "ur", "p", "le"]]
+console.log(allConstruct("purple", ["purp", "p", "ur", "le", "purpl"]));
