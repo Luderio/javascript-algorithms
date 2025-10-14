@@ -22,7 +22,15 @@ allConstruct("purple", ["purp", "p", "ur", "le", "purpl"]);
 
 ## Code Solutions:
 
+Notice that the **_Big O Notation Time and Space Complexity_** of both solutions are the same. This is because the algorithm is required to do an exhaustive operation on both unoptimized and optimized version since the problem is asking to display all possible ways to construct the **_target_** and return it in an array.
+
+The Only diiference between the two solutions is that the Optimized version will return the values faster due to memoization.
+
 ### Solution 1: Core Algorithm without Memoization.
+
+- Unoptimized
+- Big O Notation Time Complexity of O(n^m) or Exponential Time Complexity
+- Big O Notation Time Complexity of O(m) or Linear Time Complexity
 
 ```javascript
 function allConstruct(target, wordBank) {
@@ -79,6 +87,10 @@ console.log(
 ```
 
 ### Solution 2: Core Algorithm with Memoization.
+
+- Optimized
+- Big O Notation Time Complexity of O(n^m) or Exponential Time Complexity
+- Big O Notation Time Complexity of O(m) or Linear Time Complexity
 
 ```javascript
 function allConstruct(target, wordBank, memo = {}) {
