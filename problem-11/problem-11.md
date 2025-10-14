@@ -74,7 +74,7 @@ console.log(allConstruct("", ["dog", "cat", "mouse"]));
 // should return [["purp", "le"], ["p", "ur", "p", "le"]]
 console.log(allConstruct("purple", ["purp", "p", "ur", "le", "purpl"]));
 
-// should return []
+// should return []. Will take time to return the value.
 console.log(
   allConstruct("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaz", [
     "a",
@@ -135,7 +135,7 @@ console.log(allConstruct("", ["dog", "cat", "mouse"]));
 // should return [["purp", "le"], ["p", "ur", "p", "le"]]
 console.log(allConstruct("purple", ["purp", "p", "ur", "le", "purpl"]));
 
-// should return []
+// should return []. Will return the value instantly.
 console.log(
   allConstruct("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaz", [
     "a",
