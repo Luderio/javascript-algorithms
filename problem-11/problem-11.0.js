@@ -1,7 +1,8 @@
 /**
  * Core Algorithm without Memoization
  * Unoptimized
- *
+ * Big O Notation Time Complexity of O(n^m) or Exponential Time Complexity
+ * Big O Notation Time Complexity of O(m) or Linear Time Complexity
  */
 
 function allConstruct(target, wordBank) {
@@ -30,6 +31,14 @@ function allConstruct(target, wordBank) {
 
   return constructs;
 }
+
+/**
+ * m = target.length
+ * n = wordBank.length
+ *
+ * Time Complexity: O(n^m)
+ * Space Complexity: O(m)
+ */
 
 // should return [[abc, def]] because the array at index 1 and 3 when combined is equal to "abcdef".
 console.log(allConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"]));
