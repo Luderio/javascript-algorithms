@@ -7,7 +7,7 @@
 **Examples:**
 
 ```javascript
-allConstruct("abdcef", ["ab", "abc", "cd", "def", "abcd"]);
+allConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"]);
 // should return [[abc, def]] because the array at index 1 and 3 when combined is equal to "abcdef".
 
 allConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]);
