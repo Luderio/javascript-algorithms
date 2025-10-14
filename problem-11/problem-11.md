@@ -14,7 +14,7 @@ allConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]);
 // should return []
 
 allConstruct("", ["dog", "cat", "mouse"]);
-// should return []
+// should return [[]]
 
 allConstruct("purple", ["purp", "p", "ur", "le", "purpl"]);
 // should return [["purp", "le"], ["p", "ur", "p", "le"]]
