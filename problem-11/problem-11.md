@@ -7,14 +7,17 @@
 **Examples:**
 
 ```javascript
-countConstruct("abdcef", ["ab", "abc", "cd", "def", "abcd"]);
-// should return "1" because the array at index 1 and 3 when combined is equal to "abcdef".
+allConstruct("abdcef", ["ab", "abc", "cd", "def", "abcd"]);
+// should return [[abc, def]] because the array at index 1 and 3 when combined is equal to "abcdef".
 
-countConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]);
-// should return "0"
+allConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]);
+// should return []
 
-countConstruct("", ["dog", "cat", "mouse"]);
-// should return "1"
+allConstruct("", ["dog", "cat", "mouse"]);
+// should return []
+
+allConstruct("purple", ["purp", "p", "ur", "le", "purpl"]);
+// should return [["purp", "le"], ["p", "ur", "p", "le"]]
 ```
 
 ## Code Solutions:
