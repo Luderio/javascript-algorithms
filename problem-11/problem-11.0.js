@@ -46,7 +46,7 @@ console.log(allConstruct("", ["dog", "cat", "mouse"]));
 console.log(allConstruct("purple", ["purp", "p", "ur", "le", "purpl"]));
 
 console.log(
-  allConstruct("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", [
+  allConstruct("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaz", [
     "a",
     "aa",
     "aaa",
