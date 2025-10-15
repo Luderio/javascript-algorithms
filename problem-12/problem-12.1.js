@@ -1,5 +1,5 @@
 /**
- * Core Iterative Algorithm with Tabulation.
+ * Core Iterative Algorithm using two scalar variables.
  * Optimized
  * Big O Time Complexity: O(n)
  * Big O Space Complexity: O(1)
