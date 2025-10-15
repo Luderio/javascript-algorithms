@@ -30,14 +30,6 @@ function gridTraveler(m, n) {
   return table[m][n];
 }
 
-/**
- * m = rows
- * n = columns
- *
- * Time Complexity: O(mn)
- * Space Complexity: O(mn)
- */
-
 console.log(gridTraveler(2, 3)); // 3
 console.log(gridTraveler(4, 4)); // 20
 console.log(gridTraveler(6, 6)); // 252
