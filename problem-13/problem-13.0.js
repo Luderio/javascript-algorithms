@@ -2,7 +2,7 @@
  *
  * Core Algorithm using Tabulation.
  * Big O Time Complexity: O(mn).
- * Big O Space Complexity: O(mn)
+ * Big O Space Complexity: O(mn).
  */
 
 function gridTraveler(m, n) {
