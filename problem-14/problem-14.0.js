@@ -3,7 +3,14 @@
  */
 
 function canSum(targetSum, numbers) {
-  return true;
+  // input type checking.
+  if (typeof targetSum !== "number") {
+    throw new Error("argument must be a type of 'String'.");
+  }
+
+  if (!Array.isArray(numbers)) {
+    throw new Error("argument must be an array of numbers.");
+  }
 }
 
 console.log(canSum(7, [5, 3, 4, 7])); // should return true;
