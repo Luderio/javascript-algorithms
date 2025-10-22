@@ -1,5 +1,5 @@
 /**
- * CanSum Core Algorithm with Tablation..
+ * CanSum Core Algorithm with Tablation...
  *
  *
  */
