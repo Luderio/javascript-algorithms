@@ -17,4 +17,4 @@ function canSum(targetSum, numbers) {
   const table = Array(); // Visualize it as a table
 }
 
-console.log(canSum(7, [5, 3, 4, 7])); // should return true;;
+console.log(canSum(7, [5, 3, 4, 7])); // should return true
