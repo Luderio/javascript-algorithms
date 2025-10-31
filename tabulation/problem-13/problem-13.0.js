@@ -11,11 +11,11 @@ function gridTraveler(m, n) {
     .map(() => Array(n + 1).fill(0));
   table[1][1] = 1;
 
-  for (let column = 0; column <= m; column++) {
-    for (let row = 0; row <= n; row++) {
-      const current = table[column][row]; // current position.
-      if (row + 1 <= n) table[column][row + 1] += current; // increment right neighbor if the position is valid.
-      if (column + 1 <= m) table[column + 1][row] += current; // increment down neighbor if the position is valid.
+  for (let row = 0; row <= m; row++) {
+    for (let column = 0; column <= n; column++) {
+      const current = table[row][column]; // current position.
+      if (row + 1 <= m) table[row + 1][column] += current; // increment down neighbor if the position is valid.
+      if (column + 1 <= n) table[row][column + 1] += current; // increment right neighbor if the position is valid.
     }
   }
 
