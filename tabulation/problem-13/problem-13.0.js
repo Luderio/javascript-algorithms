@@ -11,11 +11,11 @@ function gridTraveler(m, n) {
     .map(() => Array(n + 1).fill(0));
   table[1][1] = 1;
 
-  for (let outer = 0; outer <= m; outer++) {
-    for (let inner = 0; inner <= n; inner++) {
-      const current = table[outer][inner]; // current position.
-      if (inner + 1 <= n) table[outer][inner + 1] += current; // increment right neighbor if the position is valid.
-      if (outer + 1 <= m) table[outer + 1][inner] += current; // increment down neighbor if the position is valid.
+  for (let column = 0; column <= m; column++) {
+    for (let row = 0; row <= n; row++) {
+      const current = table[column][row]; // current position.
+      if (row + 1 <= n) table[column][row + 1] += current; // increment right neighbor if the position is valid.
+      if (column + 1 <= m) table[column + 1][row] += current; // increment down neighbor if the position is valid.
     }
   }
 
@@ -31,6 +31,7 @@ function gridTraveler(m, n) {
  */
 
 console.log(gridTraveler(2, 3)); // 3
+console.log(gridTraveler(3, 3)); // 6
 console.log(gridTraveler(4, 4)); // 20
 console.log(gridTraveler(6, 6)); // 252
 console.log(gridTraveler(10, 10)); // 48620
