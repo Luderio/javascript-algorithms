@@ -18,4 +18,4 @@ function canSum(targetSum, numbers) {
   console.log(table);
 }
 
-console.log(canSum(7, [5, 3, 4, 7])); // should return true
+console.log(canSum(7, [5, 3, 4, 7])); // should return true.
