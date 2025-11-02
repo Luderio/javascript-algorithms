@@ -21,7 +21,6 @@ function canSum(targetSum, numbers) {
     if (table[item] === true) {
       for (let number of numbers) {
         table[item + number] = true;
-        console.log(table);
       }
     }
   }
