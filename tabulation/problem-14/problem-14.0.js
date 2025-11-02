@@ -14,8 +14,19 @@ function canSum(targetSum, numbers) {
     throw new Error("argument must be an array of numbers.");
   }
 
-  const table = Array(numbers.length + 1).fill(7); // Visualize it as a table
-  console.log(table);
+  const table = Array(targetSum + 1).fill(false); // Visualize it as a table
+  table[0] = true;
+
+  for (let item = 0; item <= targetSum; item++) {
+    if (table[item] === true) {
+      for (let number of numbers) {
+        table[item + number] = true;
+        console.log(table);
+      }
+    }
+  }
+
+  return table[targetSum];
 }
 
 console.log(canSum(7, [5, 3, 4, 7])); // should return true.
