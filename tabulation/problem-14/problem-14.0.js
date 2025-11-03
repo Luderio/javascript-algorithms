@@ -28,4 +28,14 @@ function canSum(targetSum, numbers) {
   return table[targetSum];
 }
 
+/**
+ * Big O Notation
+ *
+ * m = targetSum
+ * n = numbers
+ *
+ * Time Complexity: O(mn)
+ * Space Complexity: O(m)
+ */
+
 console.log(canSum(7, [5, 3, 4, 7])); // should return true.
