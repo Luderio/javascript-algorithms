@@ -2,7 +2,16 @@
  * howSum() Core algorithm implementation using Tabulation
  */
 
-function howSum(targetSum, numbers) {}
+function howSum(targetSum, numbers) {
+  // input type checking.
+  if (typeof targetSum !== "number") {
+    throw new Error("argument must be a type of 'String'.");
+  }
+
+  if (!Array.isArray(numbers)) {
+    throw new Error("argument must be an array of numbers.");
+  }
+}
 
 /**
  * Big O Notation
