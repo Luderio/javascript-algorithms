@@ -11,6 +11,22 @@ function howSum(targetSum, numbers) {
   if (!Array.isArray(numbers)) {
     throw new Error("argument must be an array of numbers.");
   }
+
+  const table = Array(targetSum + 1).fill(null);
+  table[0] = [];
+
+  for (let item = 0; item <= targetSum; item++) {
+    if (table[item] === null) {
+      for (let number of numbers) {
+        if (number * targetSum === targetSum || targetSum % number === 0) {
+          table[item + number] = Array(targetSum / number).fill(number);
+        } else if (number * 2 === targetSum) {
+          table[item + number] = Array(targetSum / 2).fill(number);
+        }
+      }
+    }
+  }
+  return table[targetSum];
 }
 
 /**
@@ -22,7 +38,7 @@ function howSum(targetSum, numbers) {
  * Space Complexity:
  */
 
-howSum(7, [5, 3, 4, 7]); // should return  [3, 4] or [7]
-howSum(8, [2, 3, 5]); // should return [2, 2, 2, 2]  or [3, 5]
-howSum(7, [2, 4]); // should return null
-howSum(0, [1, 2, 3]); // []
+console.log(howSum(7, [5, 3, 4, 7])); // should return  [3, 4] or [7]
+console.log(howSum(8, [2, 3, 5])); // should return [2, 2, 2, 2]  or [3, 5]
+console.log(howSum(7, [2, 4])); // should return null
+console.log(howSum(0, [1, 2, 3])); // []
