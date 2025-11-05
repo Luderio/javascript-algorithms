@@ -39,7 +39,7 @@ function howSum(targetSum, numbers) {
 /**
  * Big O Notation.
  *
- * m = targetSum
+ * m = targetSum.
  * n = numbers
  * Time Complexity:
  * Space Complexity:
