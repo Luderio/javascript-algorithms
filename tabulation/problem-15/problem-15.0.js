@@ -30,7 +30,7 @@ function howSum(targetSum, numbers) {
 }
 
 /**
- * Big O Notation
+ * Big O Notation.
  *
  * m = targetSum
  * n = numbers
