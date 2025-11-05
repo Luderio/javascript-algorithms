@@ -17,11 +17,18 @@ function howSum(targetSum, numbers) {
 
   for (let item = 0; item <= targetSum; item++) {
     if (table[item] === null) {
-      for (let number of numbers) {
-        if (number * targetSum === targetSum || targetSum % number === 0) {
-          table[item + number] = Array(targetSum / number).fill(number);
-        } else if (number * 2 === targetSum) {
-          table[item + number] = Array(targetSum / 2).fill(number);
+      for (let num = 0; num <= numbers.length; num++) {
+        if (
+          numbers[num] * targetSum === targetSum ||
+          targetSum % numbers[num] === 0
+        ) {
+          table[item + numbers[num]] = Array(targetSum / numbers[num]).fill(
+            numbers[num]
+          );
+        } else if (numbers[num] * 2 === targetSum) {
+          table[item + numbers[num]] = Array(targetSum / 2).fill(numbers[num]);
+        } else if (numbers[num] + numbers[num + 1] === targetSum) {
+          table[item + numbers[num]] = Array(targetSum / 2).fill(numbers[num]);
         }
       }
     }
