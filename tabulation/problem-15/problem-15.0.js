@@ -1,5 +1,5 @@
 /**
- * howSum() Core algorithm implementation using Tabulation...
+ * howSum() Core algorithm implementation using Tabulation....
  */
 
 function howSum(targetSum, numbers) {
