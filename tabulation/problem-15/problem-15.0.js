@@ -3,7 +3,7 @@
  */
 
 function howSum(targetSum, numbers) {
-  // input type checking.
+  // input type checking..
   if (typeof targetSum !== "number") {
     throw new Error("argument must be a type of 'String'.");
   }
